@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExample.View"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="WpfExample.View.RadGridViewExample1"
+        mc:Ignorable="d"
+        Title="RadGridViewExample1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <telerik:RadPane HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Top"
+                         IsDockable="True" Grid.Column="0" Grid.Row="0"  >
+            <telerik:RadButton Height="30" Width="50" Content="Click" HorizontalAlignment="Left"/>
+        </telerik:RadPane>
+        <telerik:RadGridView HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" 
+                             AutoGenerateColumns="False" EnableRowVirtualization="False" EnableColumnVirtualization="True" SelectionMode="Extended">
+            <telerik:RadGridView.Columns   >
+                <!--<telerik:GridViewDataColumn>
+                    <telerik:GridViewDataColumn.Header>
+                            <CheckBox IsChecked="False" />
+                    </telerik:GridViewDataColumn.Header>
+                    <telerik:GridViewDataColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="False"></CheckBox>
+                        </DataTemplate>
+                    </telerik:GridViewDataColumn.CellTemplate>
+                </telerik:GridViewDataColumn>-->
+                <telerik:GridViewSelectColumn/>
+                <telerik:GridViewDataColumn Header="aa" DataMemberBinding="{Binding aa}"></telerik:GridViewDataColumn>
+                <telerik:GridViewDataColumn Header="bb" DataMemberBinding="{Binding bb}"></telerik:GridViewDataColumn>
+                <telerik:GridViewDataColumn Header="cc" DataMemberBinding="{Binding cc}"></telerik:GridViewDataColumn>
+                <telerik:GridViewDataColumn Header="dd" DataMemberBinding="{Binding dd}"></telerik:GridViewDataColumn>
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+
+    </Grid>
+</Window>
