@@ -59,8 +59,10 @@ namespace WpfExample
 
             Debug.WriteLine("RowLoaded " + this._count.ToString());
 
+            this.grdSample.SelectedItem = _lstSampleModel[1];
             this._count++;
         }
+
 
         private void GridStyleInit()
         {
@@ -77,6 +79,42 @@ namespace WpfExample
             }
         }
 
+
+        L1
+        //void radGridView1_ValueChanged(object sender, EventArgs e)
+        //{
+
+        //    RadCheckBoxEditor editor = sender as RadCheckBoxEditor;
+
+        //    if (editor != null && (bool)editor.Value == true)
+
+        //    {
+
+        //        this.radGridView1.GridElement.BeginUpdate();
+
+        //        foreach (GridViewDataRowInfo row in this.radGridView1.Rows)
+
+        //        {
+
+        //            if (row != this.radGridView1.CurrentRow)
+
+        //            {
+
+        //                row.Cells["Bool"].Value = false;
+
+        //            }
+
+        //        }
+
+        //        this.radGridView1.GridElement.EndUpdate();
+
+        //    }
+        //}
+
+        private void grdSample_SelectionChanged(object sender, SelectionChangeEventArgs e)
+        {
+            this.grdSample.SelectedItem = _lstSampleModel[1];
+        }
         //private IEnumerable<SampleModel> GetDataGridRows(RadGridView radGridView)
         //{
         //    SampleModel row = null;
