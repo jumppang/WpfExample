@@ -27,3 +27,4 @@ namespace WpfExample.View
 }
 
 s1
+s2
