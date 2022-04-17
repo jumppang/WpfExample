@@ -1,0 +1,9 @@
+diff a/WpfExample/RadGridViewExample1.xaml.cs b/WpfExample/RadGridViewExample1.xaml.cs	(rejected hunks)
+@@ -82,6 +82,7 @@
+ 
+         L1
+         L2
++        L3
+         //void radGridView1_ValueChanged(object sender, EventArgs e)
+         //{
+ 
