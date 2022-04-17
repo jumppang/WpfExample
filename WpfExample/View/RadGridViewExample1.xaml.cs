@@ -25,9 +25,5 @@ namespace WpfExample.View
         }
     }
 }
-<<<<<<< HEAD
-
 s1
 s2
-=======
->>>>>>> 3f33ba1 (no message)
