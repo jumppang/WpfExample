@@ -82,6 +82,7 @@ namespace WpfExample
 
         L1
         L2
+        L3
         //void radGridView1_ValueChanged(object sender, EventArgs e)
         //{
 
