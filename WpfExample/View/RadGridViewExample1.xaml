@@ -14,11 +14,17 @@
         </Grid.RowDefinitions>
         <telerik:RadPane HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Top"
                          IsDockable="True" Grid.Column="0" Grid.Row="0"  >
-            <telerik:RadButton Height="30" Width="50" Content="Click" HorizontalAlignment="Left"/>
+            <telerik:RadButton Height="30" Width="50" Content="Click" HorizontalAlignment="Left" Click="btnClick_Click"/>
         </telerik:RadPane>
-        <telerik:RadGridView HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" 
+        <GridSplitter  Grid.Column="0" Grid.Row="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Top"
+              Background="Black" 
+              ShowsPreview="True"
+              Height="1" Panel.ZIndex="1" />
+        <telerik:RadGridView x:Name="grdSample" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" 
                              AutoGenerateColumns="False" EnableRowVirtualization="False" EnableColumnVirtualization="True" SelectionMode="Extended">
-            <telerik:RadGridView.Columns   >
+            <telerik:RadGridView.Columns  >
                 <!--<telerik:GridViewDataColumn>
                     <telerik:GridViewDataColumn.Header>
                             <CheckBox IsChecked="False" />
