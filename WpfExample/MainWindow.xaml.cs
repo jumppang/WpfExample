@@ -25,4 +25,6 @@ namespace WpfExample
             InitializeComponent();
         }
     }
+
+    A1
 }
