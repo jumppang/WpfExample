@@ -26,4 +26,5 @@ namespace WpfExample
         }
     }
     A1
+A2
 }
